@@ -2,8 +2,13 @@ import React from "react";
 
 export default function CoverPage() {
   return (
-    <div>
-      <h1>California</h1>
+    <div className="cover-container">
+      <div className="circle"></div>
+      <section className="section-wrap">
+        <h1 className="kwizikal">Quizzical</h1>
+        <h3 className="cover-h2">Some description if needed</h3>
+        <button className="button">Start quiz</button>
+      </section>
     </div>
   );
 }
