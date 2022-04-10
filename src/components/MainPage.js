@@ -3,7 +3,7 @@ import React from "react";
 export default function MainPage() {
   return (
     <div>
-      <h2>United States</h2>
+      <h2>Bia</h2>
     </div>
   );
 }
