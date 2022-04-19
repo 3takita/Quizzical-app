@@ -4,12 +4,20 @@ export default function MainPage(props) {
   const btn = {
     width: "138px",
     fontSize: "20px",
-    height: "36px"
+    position: "fixed",
+    height: "36px",
+    position: "absolute",
+    bottom: "10px",
+    alignItem: "center",
+    justifyContent: "center"
   };
+
+  function ansas() {}
 
   return (
     <div>
-      <h2>Bia</h2>
+      <h3>{props.question}</h3>
+      <div className="grid">{props.answer}</div>
       <button style={btn} onClick={props.toggle} className="button">
         Play Again
       </button>
