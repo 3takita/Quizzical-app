@@ -12,15 +12,19 @@ export default function MainPage(props) {
     justifyContent: "center"
   };
 
-  function ansas() {}
+  /*function ansas() {}*/
 
   return (
-    <div>
-      <h3>{props.question}</h3>
-      <div className="grid">{props.answer}</div>
-      <button style={btn} onClick={props.toggle} className="button">
-        Play Again
-      </button>
-    </div>
+    <main>
+      <div className="main-page-cont">
+        <section className="qna">
+          <h3 className="questions">{props.question}</h3>
+          <div className="answers">{props.answer}</div>
+        </section>
+        <button style={btn} onClick={props.toggle} className="button">
+          Play Again
+        </button>
+      </div>
+    </main>
   );
 }

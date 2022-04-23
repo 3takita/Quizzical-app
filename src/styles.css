@@ -15,6 +15,13 @@ body {
   margin-bottom: -120px;
   margin-right: -80px;
 }
+.questions {
+  margin-top: -15px;
+}
+.answers {
+  margin: -5px;
+  margin-top: -10px;
+}
 .blu-circle {
   background-color: lightblue;
   border-radius: 50%;
@@ -44,10 +51,20 @@ body {
   font-weight: 600;
   font-size: 35px;
 }
+.qna {
+  padding: -10px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.main-page-cont {
+  padding: 20px; /*space btw elements & margin*/
+}
 .section-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 150px;
+  padding: 60px;
 }

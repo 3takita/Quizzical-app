@@ -28,8 +28,8 @@ export default function App() {
         id={item.id}
         question={item.question}
         answer={item.answer}
-        play={play}
-        toggle={toggle}
+        //play={play}
+        //toggle={toggle}
       />
     );
   });
@@ -38,7 +38,7 @@ export default function App() {
   return (
     <main className="main">
       <div className="grid-container">
-        play?{quizElements}:<CoverPage toggle={toggle} />
+        play?{quizElements}:{<CoverPage toggle={toggle} />}
       </div>
       <button>Play</button>
     </main>
