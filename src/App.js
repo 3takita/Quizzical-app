@@ -13,13 +13,6 @@ export default function App() {
   function toggle() {
     setPlay((prevState) => !prevState);
   }
-  /*function playSetter() {
-    if(play) {
-       <div>{quizElements}</div>
-    } else {
-      <div><CoverPage /></div>
-    }
-  }*/
 
   const quizElements = ask.map((item) => {
     return (
@@ -28,19 +21,28 @@ export default function App() {
         id={item.id}
         question={item.question}
         answer={item.answer}
-        //play={play}
-        //toggle={toggle}
+        play={play}
+        toggle={toggle}
       />
     );
   });
-  /*{quiz?<MainPage toggle={toggle} /> : <CoverPage toggle={toggle} /> */
+  /*
+  const playSetter = () => {
+    setQuiz(oldState=>)
+  }
+    */
 
   return (
     <main className="main">
       <div className="grid-container">
-        play?{quizElements}:{<CoverPage toggle={toggle} />}
+        <div className="yellow-circle"></div>
+        {play ? (
+          <div className="each-answer">{quizElements}</div>
+        ) : (
+          <CoverPage toggle={toggle} />
+        )}
+        <div className="blu-circle"></div>
       </div>
-      <button>Play</button>
     </main>
   );
 }

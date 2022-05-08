@@ -2,13 +2,14 @@ import React from "react";
 
 export default function MainPage(props) {
   const btn = {
+    display: "flex",
+    marginLeft: "28%",
     width: "138px",
     fontSize: "20px",
-    position: "fixed",
     height: "36px",
-    position: "absolute",
+    position: "absolute" /*fixes btn*/,
     bottom: "10px",
-    alignItem: "center",
+    marginTop: "10%",
     justifyContent: "center"
   };
 
@@ -22,7 +23,7 @@ export default function MainPage(props) {
           <div className="answers">{props.answer}</div>
         </section>
         <button style={btn} onClick={props.toggle} className="button">
-          Play Again
+          {props.play ? "Play" : "Play Again"}
         </button>
       </div>
     </main>
