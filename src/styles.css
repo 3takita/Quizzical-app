@@ -18,20 +18,21 @@ body {
 .questions {
   margin-top: -15px;
 }
-.answer-container {
-  /*display: grid;
-  grid-template: auto / repeat(4, 1fr);*/
+/*.answer-container {
+  display: grid;
+  grid-template: auto/repeat(4, 1fr);
   color: blue;
   gap: 10px;
-}
+}*/
 .answers {
-  /*display: grid;
+  /* Styling for the answers */
+  display: grid;
   justify-content: space-around;
-  grid-template: auto / repeat(4, 1fr);*/
+  grid-template: auto / repeat(4, 1fr);
   margin: -5px;
   margin-top: -10px;
   margin-left: 3px;
-  gap: 5px;
+  /*gap: 0px;*/
   margin-bottom: 5px;
   font-size: 13px;
   background-color: white;
